@@ -41,7 +41,7 @@ const findUserById = async (userId) => {
 
 const findAllUser = async () => {
     try {
-        const usuariosRes = User.findAll({
+        const usuariosRes = await User.findAll({
             include: [
                 {
                     model: Bootcamp,
